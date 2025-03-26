@@ -2,8 +2,17 @@
   "devDependencies": {
     "process": "^0.11.10"
   },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
   "dependencies": {
+    "parcel": "^2.14.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
-  }
+  },
+  "browserslist": [
+    "last 2 Chrome version"
+  ]
 }
