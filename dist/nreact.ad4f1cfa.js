@@ -682,29 +682,48 @@ const heading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
     lineNumber: 4,
     columnNumber: 17
 }, undefined);
-const HeadingComponent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            id: "heading",
-            children: "Namaste React thamitha \uD83D\uDE80"
-        }, void 0, false, {
-            fileName: "nreact/App.js",
-            lineNumber: 6,
-            columnNumber: 9
-        }, undefined)
+const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        className: "head",
+        tabIndex: "5",
+        children: "Namaste React from thamitha \uD83D\uDE80"
     }, void 0, false, {
         fileName: "nreact/App.js",
         lineNumber: 5,
+        columnNumber: 22
+    }, undefined);
+_c = Title;
+const HeadingComponent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        id: "container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
+                fileName: "nreact/App.js",
+                lineNumber: 9,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                id: "heading",
+                children: "Namaste React Functional Component \uD83D\uDE80"
+            }, void 0, false, {
+                fileName: "nreact/App.js",
+                lineNumber: 10,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "nreact/App.js",
+        lineNumber: 8,
         columnNumber: 33
     }, undefined);
-_c = HeadingComponent;
+_c1 = HeadingComponent;
 const root = (0, _clientDefault.default).createRoot(document.getElementById('root'));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeadingComponent, {}, void 0, false, {
     fileName: "nreact/App.js",
-    lineNumber: 9,
+    lineNumber: 13,
     columnNumber: 13
 }, undefined));
-var _c;
-$RefreshReg$(_c, "HeadingComponent");
+var _c, _c1;
+$RefreshReg$(_c, "Title");
+$RefreshReg$(_c1, "HeadingComponent");
 
   $parcel$ReactRefreshHelpers$ebcb.postlude(module);
 } finally {
