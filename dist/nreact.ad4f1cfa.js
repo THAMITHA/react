@@ -751,14 +751,46 @@ const RestaurantCard = ()=>{
         style: {
             backgroundColor: "#f0f0f0"
         },
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-            children: "Meghana Foods"
-        }, void 0, false, {
-            fileName: "nreact/App.js",
-            lineNumber: 27,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "res-logo",
+                alt: "res-logo",
+                src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/7/27/68179774-f9c9-43b7-83cd-b1144cd8253a_826113%20(1).jpg"
+            }, void 0, false, {
+                fileName: "nreact/App.js",
+                lineNumber: 27,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: "Meghana Foods"
+            }, void 0, false, {
+                fileName: "nreact/App.js",
+                lineNumber: 28,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: "Biryani, north Indian, Asian"
+            }, void 0, false, {
+                fileName: "nreact/App.js",
+                lineNumber: 29,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: "4.4 stars"
+            }, void 0, false, {
+                fileName: "nreact/App.js",
+                lineNumber: 30,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: "38 minutes"
+            }, void 0, false, {
+                fileName: "nreact/App.js",
+                lineNumber: 31,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "nreact/App.js",
         lineNumber: 24,
         columnNumber: 9
@@ -774,25 +806,52 @@ const Body = ()=>{
                 children: "Search"
             }, void 0, false, {
                 fileName: "nreact/App.js",
-                lineNumber: 35,
+                lineNumber: 39,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "res-container",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
-                    fileName: "nreact/App.js",
-                    lineNumber: 37,
-                    columnNumber: 13
-                }, undefined)
-            }, void 0, false, {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
+                        fileName: "nreact/App.js",
+                        lineNumber: 41,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
+                        fileName: "nreact/App.js",
+                        lineNumber: 42,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
+                        fileName: "nreact/App.js",
+                        lineNumber: 43,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
+                        fileName: "nreact/App.js",
+                        lineNumber: 44,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
+                        fileName: "nreact/App.js",
+                        lineNumber: 45,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
+                        fileName: "nreact/App.js",
+                        lineNumber: 46,
+                        columnNumber: 13
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "nreact/App.js",
-                lineNumber: 36,
+                lineNumber: 40,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "nreact/App.js",
-        lineNumber: 34,
+        lineNumber: 38,
         columnNumber: 5
     }, undefined);
 };
@@ -803,18 +862,18 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
                 fileName: "nreact/App.js",
-                lineNumber: 45,
+                lineNumber: 54,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "nreact/App.js",
-                lineNumber: 46,
+                lineNumber: 55,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "nreact/App.js",
-        lineNumber: 44,
+        lineNumber: 53,
         columnNumber: 9
     }, undefined);
 };
@@ -822,7 +881,7 @@ _c3 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "nreact/App.js",
-    lineNumber: 52,
+    lineNumber: 61,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3;
