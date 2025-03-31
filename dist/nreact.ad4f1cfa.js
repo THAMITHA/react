@@ -745,8 +745,87 @@ const Header = ()=>{
     }, undefined);
 };
 _c = Header;
+const resObj = {
+    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+    "info": {
+        "id": "1003414",
+        "name": "Pizza Hut",
+        "cloudinaryImageId": "dc74a4b7-8d63-4eb7-91c9-048973c2cc99_1003414.jpg",
+        "locality": "Chhindwara",
+        "areaName": "Parasia Road",
+        "costForTwo": "\u20B9350 for two",
+        "cuisines": [
+            "Pizzas",
+            "burger",
+            "finger-chips"
+        ],
+        "avgRating": 4.1,
+        "parentId": "721",
+        "avgRatingString": "4.1",
+        "totalRatingsString": "51",
+        "sla": {
+            "deliveryTime": 47,
+            "lastMileTravel": 13.8,
+            "serviceability": "SERVICEABLE",
+            "slaString": "45-50 mins",
+            "lastMileTravelString": "13.8 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2025-03-31 23:00:00",
+            "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "ITEMS",
+            "subHeader": "AT \u20B964"
+        },
+        "orderabilityCommunication": {
+            "title": {},
+            "subTitle": {},
+            "message": {},
+            "customIcon": {}
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "isNewlyOnboarded": true,
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    "analytics": {
+        "context": "seo-data-4bb6f42f-aba5-4edc-a32a-9402487320ae"
+    },
+    "cta": {
+        "link": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/12/5/",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+};
 const RestaurantCard = (props)=>{
-    console.log(props);
+    const { resData } = props;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "res-card",
         style: {
@@ -756,44 +835,57 @@ const RestaurantCard = (props)=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 className: "res-logo",
                 alt: "res-logo",
-                src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/7/27/68179774-f9c9-43b7-83cd-b1144cd8253a_826113%20(1).jpg"
+                src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/12/5/" + resData.info.cloudinaryImageId
             }, void 0, false, {
                 fileName: "nreact/App.js",
-                lineNumber: 28,
+                lineNumber: 106,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: props.resName
+                children: resData.info.name
             }, void 0, false, {
                 fileName: "nreact/App.js",
-                lineNumber: 29,
+                lineNumber: 107,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: props.cuisine
+                children: resData.info.cuisines.join(", ")
             }, void 0, false, {
                 fileName: "nreact/App.js",
-                lineNumber: 30,
+                lineNumber: 108,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: "4.4 stars"
-            }, void 0, false, {
+                children: [
+                    resData.info.avgRatingString,
+                    " stars"
+                ]
+            }, void 0, true, {
                 fileName: "nreact/App.js",
-                lineNumber: 31,
+                lineNumber: 109,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: "38 minutes"
+                children: [
+                    resData.info.sla.deliveryTime,
+                    " minutes"
+                ]
+            }, void 0, true, {
+                fileName: "nreact/App.js",
+                lineNumber: 110,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: resData.info.costForTwo
             }, void 0, false, {
                 fileName: "nreact/App.js",
-                lineNumber: 32,
+                lineNumber: 111,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "nreact/App.js",
-        lineNumber: 25,
+        lineNumber: 103,
         columnNumber: 9
     }, undefined);
 };
@@ -807,38 +899,27 @@ const Body = ()=>{
                 children: "Search"
             }, void 0, false, {
                 fileName: "nreact/App.js",
-                lineNumber: 40,
+                lineNumber: 119,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "res-container",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
-                        resName: "Meghana Foods",
-                        cuisine: "Biryani, North Indian, Asian"
-                    }, void 0, false, {
-                        fileName: "nreact/App.js",
-                        lineNumber: 42,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
-                        resName: "KFC",
-                        cuisine: "Burger, Fast Food"
-                    }, void 0, false, {
-                        fileName: "nreact/App.js",
-                        lineNumber: 43,
-                        columnNumber: 13
-                    }, undefined)
-                ]
-            }, void 0, true, {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
+                    resData: resObj
+                }, void 0, false, {
+                    fileName: "nreact/App.js",
+                    lineNumber: 121,
+                    columnNumber: 13
+                }, undefined)
+            }, void 0, false, {
                 fileName: "nreact/App.js",
-                lineNumber: 41,
+                lineNumber: 120,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "nreact/App.js",
-        lineNumber: 39,
+        lineNumber: 118,
         columnNumber: 5
     }, undefined);
 };
@@ -849,18 +930,18 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
                 fileName: "nreact/App.js",
-                lineNumber: 51,
+                lineNumber: 129,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "nreact/App.js",
-                lineNumber: 52,
+                lineNumber: 130,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "nreact/App.js",
-        lineNumber: 50,
+        lineNumber: 128,
         columnNumber: 9
     }, undefined);
 };
@@ -868,7 +949,7 @@ _c3 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "nreact/App.js",
-    lineNumber: 58,
+    lineNumber: 136,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3;

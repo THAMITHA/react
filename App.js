@@ -19,17 +19,96 @@ const Header = ()=>{
     )   
 }
 
+const resObj = {
+    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+    "info": {
+    "id": "1003414",
+    "name": "Pizza Hut",
+    "cloudinaryImageId": "dc74a4b7-8d63-4eb7-91c9-048973c2cc99_1003414.jpg",
+    "locality": "Chhindwara",
+    "areaName": "Parasia Road",
+    "costForTwo": "₹350 for two",
+    "cuisines": [
+    "Pizzas","burger","finger-chips"
+    ],
+    "avgRating": 4.1,
+    "parentId": "721",
+    "avgRatingString": "4.1",
+    "totalRatingsString": "51",
+    "sla": {
+    "deliveryTime": 47,
+    "lastMileTravel": 13.8,
+    "serviceability": "SERVICEABLE",
+    "slaString": "45-50 mins",
+    "lastMileTravelString": "13.8 km",
+    "iconType": "ICON_TYPE_EMPTY"
+    },
+    "availability": {
+    "nextCloseTime": "2025-03-31 23:00:00",
+    "opened": true
+    },
+    "badges": {},
+    "isOpen": true,
+    "type": "F",
+    "badgesV2": {
+    "entityBadges": {
+    "imageBased": {},
+    "textBased": {},
+    "textExtendedBadges": {}
+    }
+    },
+    "aggregatedDiscountInfoV3": {
+    "header": "ITEMS",
+    "subHeader": "AT ₹64"
+    },
+    "orderabilityCommunication": {
+    "title": {},
+    "subTitle": {},
+    "message": {},
+    "customIcon": {}
+    },
+    "differentiatedUi": {
+    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+    "differentiatedUiMediaDetails": {
+    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+    "lottie": {},
+    "video": {}
+    }
+    },
+    "reviewsSummary": {},
+    "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    "isNewlyOnboarded": true,
+    "restaurantOfferPresentationInfo": {},
+    "externalRatings": {
+    "aggregatedRating": {
+    "rating": "--"
+    }
+    },
+    "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    "analytics": {
+    "context": "seo-data-4bb6f42f-aba5-4edc-a32a-9402487320ae"
+    },
+    "cta": {
+    "link": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/12/5/",
+    "text": "RESTAURANT_MENU",
+    "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+    }
+
 const RestaurantCard = (props) =>{
-    console.log(props)
+    const {resData} = props
     return (
         <div className="res-card" style={{
             backgroundColor: "#f0f0f0",
         }}>
-        <img className= "res-logo" alt="res-logo" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/7/27/68179774-f9c9-43b7-83cd-b1144cd8253a_826113%20(1).jpg"/>    
-            <h3>{props.resName}</h3>
-            <h4>{props.cuisine}</h4>
-            <h4>4.4 stars</h4>
-            <h4>38 minutes</h4>
+        <img className= "res-logo" alt="res-logo" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/12/5/"+ resData.info.cloudinaryImageId}/>    
+            <h3>{resData.info.name}</h3>
+            <h4>{resData.info.cuisines.join(", ")}</h4>
+            <h4>{resData.info.avgRatingString} stars</h4>
+            <h4>{resData.info.sla.deliveryTime} minutes</h4>
+            <h4>{resData.info.costForTwo}</h4>
         </div>
     )
 }
@@ -39,8 +118,7 @@ const Body = () => {
     <div className="body">
         <div className="search">Search</div>
         <div className="res-container">
-            <RestaurantCard resName="Meghana Foods" cuisine="Biryani, North Indian, Asian"/>
-            <RestaurantCard resName="KFC" cuisine="Burger, Fast Food" />      
+            <RestaurantCard resData={resObj}/>
         </div>
     </div>
    ) 
