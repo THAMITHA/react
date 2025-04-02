@@ -46,4 +46,9 @@
 .res-logo {
   width: 100%;
 }
+
+.filter-btn {
+  cursor: pointer;
+  margin: 10px;
+}
 /*# sourceMappingURL=nreact.27783ab7.css.map */
