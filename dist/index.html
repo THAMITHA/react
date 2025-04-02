@@ -10,7 +10,7 @@
     <div id="root">
         <h1>Not render</h1>
     </div>
-    <script src="/nreact.ad4f1cfa.js">// modules are defined as an array
+    <script src="/nreact.1ccbad14.js">// modules are defined as an array
 // [ module function, map of requires ]
 //
 // map of requires is short require name -> numeric require
@@ -23,6 +23,7 @@
   entry,
   mainEntry,
   parcelRequireName,
+  externals,
   distDir,
   publicUrl,
   devServer
@@ -56,6 +57,9 @@
   function newRequire(name, jumped) {
     if (!cache[name]) {
       if (!modules[name]) {
+        if (externals[name]) {
+          return externals[name];
+        }
         // if we cannot find the module within our internal map or
         // cache jump to the current global require ie. the last bundle
         // that was added to the page.
@@ -168,7 +172,7 @@
       });
     }
   }
-})({"PnoYu":[function(require,module,exports,__globalThis) {
+})({"aT5aM":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -300,7 +304,8 @@ if (!parent || !parent.isParcelRequire) {
         if (typeof WebSocket !== 'undefined') try {
             ws = new WebSocket(protocol + '://' + hostname + (port ? ':' + port : '') + '/');
         } catch (err) {
-            if (err.message) console.error(err.message);
+            // Ignore cloudflare workers error.
+            if (err.message && !err.message.includes('Disallowed operation called within global scope')) console.error(err.message);
         }
     }
     if (ws) {
@@ -675,7 +680,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"9eDL7":[function(require,module,exports,__globalThis) {
 
-},{}]},["PnoYu","9eDL7"], "9eDL7", "parcelRequire94c2")
+},{}]},["aT5aM","9eDL7"], "9eDL7", "parcelRequire94c2", {})
 
 </script>
 </body>
