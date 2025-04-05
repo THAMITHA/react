@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 import mockData from "../utils/mockData"
 
 const Body = () => {
-    const [listOfRestaurants, setListOfRestaurants] = useState(mockData)
+    const [listOfRestaurants, setListOfRestaurants] = useState([])
     console.log(mockData)
     useEffect(()=>{
         fetchData()
@@ -17,6 +17,9 @@ const Body = () => {
 
         setListOfRestaurants(json?.data?.cards[4]?.card?.card?.gridElements.infoWithStyle.restaurants)
 
+    }
+    if(listOfRestaurants.length===0){
+        return <h1>Loading...</h1>
     }
     return (
      <div className="body">
