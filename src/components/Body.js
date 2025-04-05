@@ -4,11 +4,20 @@ import mockData from "../utils/mockData"
 
 const Body = () => {
     const [listOfRestaurants, setListOfRestaurants] = useState(mockData)
-
+    console.log(mockData)
     useEffect(()=>{
-        console.log('useEffect called')
+        fetchData()
     }, [])
-    console.log('body render')
+
+    const fetchData = async() => {
+        //fetch will return promise
+        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9352403&lng=77.624532&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
+        
+        const json = await data.json()
+
+        setListOfRestaurants(json?.data?.cards[4]?.card?.card?.gridElements.infoWithStyle.restaurants)
+
+    }
     return (
      <div className="body">
          <div className="filter">
