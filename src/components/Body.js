@@ -7,6 +7,8 @@ const Body = () => {
     const [listOfRestaurants, setListOfRestaurants] = useState([])
     const [filteredRestaurant, setFilteredRestaurant] = useState([])
     const [searchText, setSearchText] = useState("")
+
+    // Whenever state variables update, react triggers a reconciliation cycle(re-renders the component)
     useEffect(()=>{
         fetchData()
     }, [])
@@ -28,7 +30,7 @@ const Body = () => {
                 <input type="text" className="search-box" value={searchText} onChange = {(e)=>{setSearchText(e.target.value)}}/>
                 <button onClick={()=>{
                     console.log(searchText)
-                    const filteredRestaurant = listOfRestaurants.filter((res)=>res.info.name.toLowerCase().includes(searchText))
+                    const filteredRestaurant = listOfRestaurants.filter((res)=>res.info.name.toLowerCase().includes(searchText.toLowerCase()))
                     setFilteredRestaurant(filteredRestaurant)
                 }}>search</button>
             </div>
