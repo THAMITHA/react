@@ -1,4 +1,3 @@
-import User from "./user";
 import UserClass from "./UserClass";
 
 const About = (props) => {
@@ -6,7 +5,6 @@ const About = (props) => {
         <div>
             <h1>About</h1>
             <h2>This is Namaste web Series</h2>
-            <User name={"Thamitha (functional)"}/>
             <UserClass name={"Thamitha (class)"} location={"Mysore"} />
          </div>        
     )
