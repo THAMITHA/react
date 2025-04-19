@@ -7,6 +7,14 @@ import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 const About = lazy(()=>import("./components/About"))
+
+//Chunking
+//Code Splitting
+//Dynamic Bundling
+//lazy loading
+//on demand loading
+//dynamic import
+
 const Grocery = lazy(()=>import("./components/Grocery"))
 const AppLayout = () => {
     return(
