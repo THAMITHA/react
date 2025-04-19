@@ -13,6 +13,9 @@ class UserClass extends React.Component{
     }
 
     async componentDidMount(){
+        setInterval(()=>{
+            console.log('namaste react op')
+        },1000)
         // console.log(this.props.name+' componentDidMount')
         const data = await fetch("https://api.github.com/users/thamitha")
         const json = await data.json()
