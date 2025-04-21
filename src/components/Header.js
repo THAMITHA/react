@@ -13,12 +13,12 @@ export const Header = ()=>{
     },[btnNameReact])
 
     return(
-        <div className="header">
-            <div className="logo-container">
+        <div className="flex">
+            <div className="w-56">
                 <img className="logo" src={LOGO_URL}/>
             </div>
             <div className="nav-items">
-                <ul>
+                <ul className="flex">
                     <li>online status: {onlineStatus? "✅":"🔴"}</li>
                     <li><Link to={"/"}>Home</Link></li>
                     <li><Link to={"/about"}>About Us</Link></li>
