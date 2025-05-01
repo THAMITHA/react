@@ -8,6 +8,8 @@ import RestaurantMenu from "./components/RestaurantMenu";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import UserContext from "./utils/UserContext";
 const About = lazy(()=>import("./components/About"))
+import { Provider } from "react-redux";
+import appStore from "./utils/appStore";
 
 
 //Chunking
@@ -29,7 +31,8 @@ const AppLayout = () => {
     }, 
     [])
     return(
-        <UserContext.Provider value={{loggedInUser: userName, setUserName}}>
+        <Provider store={appStore}>
+            <UserContext.Provider value={{loggedInUser: userName, setUserName}}>
             <div className="app">
             <UserContext.Provider value={{loggedInUser: "Pooja"}}>
                 <Header/>   
@@ -37,6 +40,7 @@ const AppLayout = () => {
             <Outlet />  
         </div>  
         </UserContext.Provider>
+        </Provider>
     )
 }
 
