@@ -10,6 +10,7 @@ import UserContext from "./utils/UserContext";
 const About = lazy(()=>import("./components/About"))
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
+import Cart from "./components/Cart";
 
 
 //Chunking
@@ -68,6 +69,10 @@ const appRouter = createBrowserRouter([
             {
                 path: "/Grocery",
                 element: <Suspense fallback={<h1>Loading...</h1>}><Grocery/></Suspense>
+            },
+            {
+                path: "/cart",
+                element: <Cart/>
             }
         ],
         errorElement: <Error/>
