@@ -20,13 +20,15 @@ const cartSlice = createSlice({
         removeItem: (state) =>{
             state.items.pop();
         },
+
+        //originalState = {items: ["pizza"]}
         clearCart: (state) =>{
             // state = ["Thamitha"] ===> this will not Worker.
             // console.log(state) //this return proxystate hence to clearly wrap with current
             // console.log(current(state))
             // state = []
             // console.log(state)
-            return {items: []};  //this new [] will be replaced inside originalstate = []
+            return {items: []};  //this new object will be replaced inside originalstate = { items: [] }
             // state.items.length = 0;
         }
     }
