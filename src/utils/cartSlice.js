@@ -7,7 +7,13 @@ const cartSlice = createSlice({
     },
     reducers: {
         addItem: (state, action) =>{
-            //mutating the state here
+            //vanialla(older) Redux => DON'T MUTATE STATE, "returning was mandatory"
+            // const newState = [...state];
+            // newState.items.push(action.payload);
+            // return newState;
+
+            //Redux-Toolkit
+            //we have to mutate the state here
             state.items.push(action.payload);
         },
         removeItem: (state) =>{
