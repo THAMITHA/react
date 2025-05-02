@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, current } from "@reduxjs/toolkit";
 
 const cartSlice = createSlice({
     name: 'cart',
@@ -14,13 +14,20 @@ const cartSlice = createSlice({
 
             //Redux-Toolkit
             //we have to mutate the state here
+            //redux uses immer behind the seen 
             state.items.push(action.payload);
         },
         removeItem: (state) =>{
             state.items.pop();
         },
         clearCart: (state) =>{
-            state.items.length = 0;
+            // state = ["Thamitha"] ===> this will not Worker.
+            // console.log(state) //this return proxystate hence to clearly wrap with current
+            // console.log(current(state))
+            // state = []
+            // console.log(state)
+            return {items: []};  //this new [] will be replaced inside originalstate = []
+            // state.items.length = 0;
         }
     }
 })
