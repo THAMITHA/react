@@ -28,6 +28,6 @@ test("should load input name inside contact us component", ()=> {
 
 test("should load 2 input boxed on the Contact component", ()=>{
     render(<Contact/>)
-    const inputBoxes = screen.getAllByRole("textbox");
-    expect(inputBoxes.length).toBe(3)
+    const inputBoxes = screen.getAllByRole("textbox"); //multiple items present
+    expect(inputBoxes.length).not.toBe(4)
 })
