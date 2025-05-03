@@ -26,4 +26,5 @@
     - Installed Babel dependencies(jest with babel)
     - Configure Babel
     - Configure Parcel Config file to disable default babel transpilation 
+    - Jest Configuration
 
