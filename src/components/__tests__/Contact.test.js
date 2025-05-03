@@ -19,3 +19,9 @@ test("should load Submit test inside contact us component", ()=> {
     const button = screen.getByText("Submit")
     expect(button).toBeInTheDocument();
 })
+
+test("should load input name inside contact us component", ()=> {
+    render(<Contact/>)
+    const inputName = screen.getByPlaceholderText("name")
+    expect(inputName).toBeInTheDocument();
+})
