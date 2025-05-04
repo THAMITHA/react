@@ -16,4 +16,10 @@ it("Should render Header Component with a login button", () => {
     // const loginButton = screen.getByRole("button")
     const loginButton = screen.getByText("Login")
     expect(loginButton).toBeInTheDocument();
+
+    //cart text
+
+    const cartItems = screen.getByText("Cart - (0 items)");
+
+    expect(cartItems).toBeInTheDocument();
 })
