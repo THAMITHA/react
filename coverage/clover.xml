@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1746354527881" clover="3.2.0">
-  <project timestamp="1746354527881" name="All files">
+<coverage generated="1746354658063" clover="3.2.0">
+  <project timestamp="1746354658063" name="All files">
     <metrics statements="45" coveredstatements="24" conditionals="4" coveredconditionals="1" methods="22" coveredmethods="6" elements="71" coveredelements="31" complexity="0" loc="45" ncloc="45" packages="2" files="10" classes="10"/>
     <package name="components">
       <metrics statements="27" coveredstatements="11" conditionals="4" coveredconditionals="1" methods="15" coveredmethods="4"/>
@@ -18,12 +18,12 @@
       <file name="Header.js" path="/Users/thamitha/nreact/src/components/Header.js">
         <metrics statements="8" coveredstatements="7" conditionals="4" coveredconditionals="1" methods="3" coveredmethods="2"/>
         <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="16" count="2" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
         <line num="34" count="0" type="cond" truecount="0" falsecount="2"/>
       </file>
       <file name="UserClass.js" path="/Users/thamitha/nreact/src/components/UserClass.js">
@@ -74,13 +74,13 @@
       <file name="useOnlineStatus.js" path="/Users/thamitha/nreact/src/utils/useOnlineStatus.js">
         <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
       </file>
     </package>
   </project>
