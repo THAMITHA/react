@@ -8,3 +8,7 @@ it("should render restaurnat card with props data", () => {
     const name = screen.getByText('KFC');
     expect(name).toBeInTheDocument()
 })
+
+it("should render restaurnat card component with promoted label", () => {
+    //home work -test HOC : withPromotedLabel()
+})
