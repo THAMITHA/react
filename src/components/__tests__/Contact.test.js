@@ -22,14 +22,14 @@ describe("Contact Us Page Test Case", () => {
     })
     
     it("should load input name inside contact us component", ()=> {
-        render(<Contact/>)
-        const inputName = screen.getByPlaceholderText("name")
-        expect(inputName).toBeInTheDocument();
+        render(<Contact/>)  //render
+        const inputName = screen.getByPlaceholderText("name") //query
+        expect(inputName).toBeInTheDocument();   //assert
     })
     
     it("should load 2 input boxed on the Contact component", ()=>{
         render(<Contact/>)
-        const inputBoxes = screen.getAllByRole("textbox"); //multiple items present
+        const inputBoxes = screen.getAllByRole("textbox"); //multiple items present 
         expect(inputBoxes.length).not.toBe(4)
     })
 })
