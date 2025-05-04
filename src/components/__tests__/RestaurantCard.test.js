@@ -10,5 +10,5 @@ it("should render restaurnat card with props data", () => {
 })
 
 it("should render restaurnat card component with promoted label", () => {
-    //home work -test HOC : withPromotedLabel()
+    
 })
