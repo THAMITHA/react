@@ -1,6 +1,8 @@
 import MOCK_DATA from "../mocks/resCardMock.json"
 import { render, screen } from "@testing-library/react"
 import RestaurantCard from "../RestaurantCard"
+import { withPromotedLabel } from "../RestaurantCard"
+import UserContext from "../../utils/UserContext"
 import "@testing-library/jest-dom"
 
 it("should render restaurnat card with props data", () => {
@@ -10,5 +12,10 @@ it("should render restaurnat card with props data", () => {
 })
 
 it("should render restaurnat card component with promoted label", () => {
-    
+    const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
+    render(<UserContext.Provider value={{ loggedInUser: "Jane Doe" }}>
+        <RestaurantCardPromoted resData={MOCK_DATA} />
+      </UserContext.Provider>)
+    const promotedLabel = screen.getByText('Promoted')
+    expect(promotedLabel).toBeInTheDocument()
 })
