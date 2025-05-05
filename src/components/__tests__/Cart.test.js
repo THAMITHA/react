@@ -28,8 +28,11 @@ it("Should load Restaurant menu Component", async () =>{
     const accordionHeader = screen.getByText("Drinks (9)");
     fireEvent.click(accordionHeader);
     expect(screen.getAllByTestId('foodItems').length).toBe(9);
+    expect(screen.getByText('Cart - (0 items)')).toBeInTheDocument();
     const addBtns = screen.getAllByRole("button",{name: "Add +"});
     fireEvent.click(addBtns[0])
     expect(screen.getByText('Cart - (1 items)')).toBeInTheDocument();
+    fireEvent.click(addBtns[1])
+    expect(screen.getByText('Cart - (2 items)')).toBeInTheDocument();
     // expect(accordionHeader).toBe("Drinks (9)")
 })
