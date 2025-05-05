@@ -31,8 +31,8 @@ it("should render the Body Component with Search", async() => {
     fireEvent.change(searchInput, {target: {value: "burger"}})
     fireEvent.click(searchBtn)
     //onClick of search button screen should load 4 cards 
-    const cards = screen.getAllByTestId("resCard")
+    const cardsAfterSearch = screen.getAllByTestId("resCard")
     expect(searchBtn).toBeInTheDocument()
     
-    expect(cards.length).toBe(1);
+    expect(cardsAfterSearch.length).toBe(1);
 });
