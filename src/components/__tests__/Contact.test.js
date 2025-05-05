@@ -8,21 +8,21 @@ describe("Contact Us Page Test Case", () => {
     //AfterEach
     //AfterAll
 
-    beforeAll(()=>{
-        console.log("before all")
-    })
+    // beforeAll(()=>{
+    //     console.log("before all")
+    // })
 
-    beforeEach(()=>{
-        console.log("before each")
-    })
+    // beforeEach(()=>{
+    //     console.log("before each")
+    // })
 
-    afterAll(()=>{
-        console.log("after all")
-    })
+    // afterAll(()=>{
+    //     console.log("after all")
+    // })
 
-    afterEach(()=>{
-        console.log("after each")
-    })
+    // afterEach(()=>{
+    //     console.log("after each")
+    // })
 
     it("should load heading inside contact us component", ()=> {
         render(<Contact/>)
