@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1746472650927" clover="3.2.0">
-  <project timestamp="1746472650927" name="All files">
-    <metrics statements="118" coveredstatements="95" conditionals="18" coveredconditionals="14" methods="49" coveredmethods="31" elements="185" coveredelements="140" complexity="0" loc="118" ncloc="118" packages="2" files="17" classes="17"/>
+<coverage generated="1746472959991" clover="3.2.0">
+  <project timestamp="1746472959991" name="All files">
+    <metrics statements="118" coveredstatements="98" conditionals="18" coveredconditionals="14" methods="49" coveredmethods="34" elements="185" coveredelements="146" complexity="0" loc="118" ncloc="118" packages="2" files="17" classes="17"/>
     <package name="components">
-      <metrics statements="90" coveredstatements="72" conditionals="18" coveredconditionals="14" methods="39" coveredmethods="26"/>
+      <metrics statements="90" coveredstatements="74" conditionals="18" coveredconditionals="14" methods="39" coveredmethods="28"/>
       <file name="About.js" path="/Users/thamitha/nreact/src/components/About.js">
         <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
         <line num="8" count="0" type="stmt"/>
@@ -46,25 +46,25 @@
       </file>
       <file name="Header.js" path="/Users/thamitha/nreact/src/components/Header.js">
         <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="3"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="4" type="stmt"/>
-        <line num="11" count="4" type="stmt"/>
-        <line num="12" count="4" type="stmt"/>
-        <line num="16" count="7" type="stmt"/>
-        <line num="17" count="4" type="stmt"/>
-        <line num="19" count="4" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="12" count="6" type="stmt"/>
+        <line num="16" count="11" type="stmt"/>
+        <line num="17" count="6" type="stmt"/>
+        <line num="19" count="6" type="stmt"/>
         <line num="34" count="1" type="cond" truecount="1" falsecount="1"/>
       </file>
       <file name="ItemList.js" path="/Users/thamitha/nreact/src/components/ItemList.js">
-        <metrics statements="8" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="2"/>
+        <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="4"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
         <line num="14" count="9" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
       </file>
       <file name="RestaurantCard.js" path="/Users/thamitha/nreact/src/components/RestaurantCard.js">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
@@ -83,24 +83,24 @@
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="10" type="stmt"/>
         <line num="6" count="10" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
         <line num="9" count="10" type="stmt"/>
       </file>
       <file name="RestaurantMenu.js" path="/Users/thamitha/nreact/src/components/RestaurantMenu.js">
         <metrics statements="13" coveredstatements="13" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
         <line num="7" count="1" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="10" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="12" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="13" count="2" type="stmt"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
-        <line num="16" count="34" type="stmt"/>
-        <line num="17" count="2" type="stmt"/>
-        <line num="18" count="2" type="stmt"/>
-        <line num="23" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="51" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="23" count="15" type="cond" truecount="2" falsecount="0"/>
       </file>
       <file name="Shimmer.js" path="/Users/thamitha/nreact/src/components/Shimmer.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -129,19 +129,19 @@
       </file>
     </package>
     <package name="utils">
-      <metrics statements="28" coveredstatements="23" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="5"/>
+      <metrics statements="28" coveredstatements="24" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="6"/>
       <file name="UserContext.js" path="/Users/thamitha/nreact/src/utils/UserContext.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="3" count="3" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
       </file>
       <file name="appStore.js" path="/Users/thamitha/nreact/src/utils/appStore.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="4" count="2" type="stmt"/>
       </file>
       <file name="cartSlice.js" path="/Users/thamitha/nreact/src/utils/cartSlice.js">
-        <metrics statements="5" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <metrics statements="5" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
         <line num="3" count="2" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
         <line num="31" count="0" type="stmt"/>
         <line num="37" count="2" type="stmt"/>
@@ -154,27 +154,27 @@
       </file>
       <file name="useOnlineStatus.js" path="/Users/thamitha/nreact/src/utils/useOnlineStatus.js">
         <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="4" count="11" type="stmt"/>
-        <line num="5" count="11" type="stmt"/>
-        <line num="6" count="5" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="13" type="stmt"/>
+        <line num="5" count="13" type="stmt"/>
+        <line num="6" count="6" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
-        <line num="9" count="5" type="stmt"/>
+        <line num="9" count="6" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
-        <line num="13" count="11" type="stmt"/>
+        <line num="13" count="13" type="stmt"/>
       </file>
       <file name="useRestaurantMenu.js" path="/Users/thamitha/nreact/src/utils/useRestaurantMenu.js">
         <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
-        <line num="17" count="3" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
       </file>
     </package>
   </project>
