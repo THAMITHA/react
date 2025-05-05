@@ -47,9 +47,9 @@ it("Should filter Top Rated Restaurant ", async() => {
     const cardsBeforeFilter = screen.getAllByTestId('resCard');
     expect(cardsBeforeFilter.length).toBe(8);
     
-    const topRatedBtn = screen.getAllByRole("button", {name: "Top Rated Restaurants"});
+    const topRatedBtn = screen.getByRole("button", {name: "Top Rated Restaurants"});
     fireEvent.click(topRatedBtn);  
 
     const cardsAfterFilter = screen.getAllByTestId("resCard");
-    expect(cardsAfterFilter.length).toBe()
+    expect(cardsAfterFilter.length).toBe(2)
 })
