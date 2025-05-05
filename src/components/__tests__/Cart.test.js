@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 import MOCK_DATA_NAME from "../mocks/mockResMenu.json"
 import appStore from "../../utils/appStore";
 import { BrowserRouter } from "react-router-dom";
+import "@testing-library/jest-dom"
 
 global.fetch = jest.fn(() => 
     Promise.resolve({
@@ -29,5 +30,6 @@ it("Should load Restaurant menu Component", async () =>{
     expect(screen.getAllByTestId('foodItems').length).toBe(9);
     const addBtns = screen.getAllByRole("button",{name: "Add +"});
     fireEvent.click(addBtns[0])
+    expect(screen.getByText('Cart - (1 items)')).toBeInTheDocument();
     // expect(accordionHeader).toBe("Drinks (9)")
 })
