@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import Body from "../Body";
 import { act } from "@testing-library/react";
 import MOCK_DATA from "../mocks/mockResListData.json"
@@ -20,6 +20,14 @@ it("should render the Body Component with Search", async() => {
         </BrowserRouter>
     ));
     const searchBtn = screen.getByRole("button", {name: "search"});
-    console.log(searchBtn)
+    console.log('SearchButton', searchBtn)
+    const searchInput = screen.getByTestId('searchInput')
+    console.log('searchInput', searchInput)
+    fireEvent.change(searchInput, {target: {value: "burger"}})
+    fireEvent.click(searchBtn)
+    //onClick of search button screen should load 4 cards 
+    const cards = screen.getAllByTestId("resCard")
     expect(searchBtn).toBeInTheDocument()
+    
+    expect(cards.length).toBe(1);
 });
