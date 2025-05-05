@@ -12,7 +12,7 @@ global.fetch = jest.fn(()=>{
         }
     })
 });
-it("should render the Body Component with Search", async() => {
+it("should Search Res List for burger", async() => {
     await act(async () => 
     render(
         <BrowserRouter>
