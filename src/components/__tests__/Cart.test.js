@@ -17,7 +17,9 @@ it("Should load Restaurant menu Component", async () =>{
             <RestaurantMenu/>
         </Provider>));
     const accordionHeader = screen.getByText("Drinks (9)");
-    fireEvent.click(accordionHeader)
-    expect(screen.getAllByTestId('foodItems').length).toBe(9)
+    fireEvent.click(accordionHeader);
+    expect(screen.getAllByTestId('foodItems').length).toBe(9);
+    const addBtn = screen.getAllByRole("button",{name: "Add +"});
+    console.log(addBtn)
     // expect(accordionHeader).toBe("Drinks (9)")
 })
