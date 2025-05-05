@@ -45,8 +45,8 @@ const Body = () => {
                 }}>search</button>
             </div>
             <div className="search m-4 p-4 flex items-center">
-                <button className="px-4 py-2 bg-gray-100 rounded-lg" onClick={()=>{filteredList = listOfRestaurants.filter((res)=> res.info.avgRatingString>4)
-                setListOfRestaurants(filteredList)
+                <button className="px-4 py-2 bg-gray-100 rounded-lg" onClick={() => {filteredList = listOfRestaurants.filter((res) => parseFloat(res.info.avgRatingString) > 4.5);
+                setFilteredRestaurant(filteredList);
                 }}>Top Rated Restaurants</button>
                     <label className="m-4 p-4 flex items-center">UserName: </label>
                     <input className="border border-black p-2" value={loggedInUser} onChange={(e)=>{setUserName(e.target.value)}}/>
